@@ -25,16 +25,16 @@ import lombok.RequiredArgsConstructor;
 public class AuthenticationServiceImpl implements AuthenticationService{
 
 	@Autowired
-	private final UserRepository userRepository = null;
+	private UserRepository userRepository;
 	
 	@Autowired
-	private final PasswordEncoder passwordEncoder = null;
+	private PasswordEncoder passwordEncoder;
 	
 	@Autowired
-	private final AuthenticationManager authenticationManager = null;
+	private AuthenticationManager authenticationManager;
 	
 	@Autowired
-	private final JWTService jwtService = null;
+	private JWTService jwtService;
 	
 	@Override
 	public User signup(SignupRequest signUpRequest) {
