@@ -31,10 +31,10 @@ import lombok.RequiredArgsConstructor;
 public class SecurityConfig {
 
 	@Autowired
-	private final JwtAuthFilter jwtAuthFilter = null;
+	private JwtAuthFilter jwtAuthFilter;
 	
 	@Autowired
-	private final UserService userService = null;
+	private UserService userService;
 	
 	
 	
